@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/yiguo/index/index",
+    "pages/yiguo/indexx/index",
+    "pages/yiguo/list/list",
+    "pages/yiguo/cart/cart",
+    "pages/yiguo/mine/mine",
+    "pages/yiguo/detail/detail",
+    "pages/yiguo/mygoods/mygoods",
+    "pages/yiguo/myadress/myadress"
+  ],
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#00BFFF",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/yiguo/indexx/index",
+        "iconPath": "images/icons/btn-tabs_01.png",
+        "selectedIconPath": "images/icons/btn-tabs_07.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/yiguo/list/list",
+        "iconPath": "images/icons/btn-tabs_03.png",
+        "selectedIconPath": "images/icons/btn-tabs_08.png",
+        "text": "分类"
+      },
+
+      {
+        "pagePath": "pages/yiguo/mine/mine",
+        "iconPath": "images/icons/btn-tabs_06.png",
+        "selectedIconPath": "images/icons/btn-tabs_10.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "bold",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "江苏汇洲酒业股份",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": true
+}

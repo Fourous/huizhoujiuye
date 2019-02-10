@@ -1,0 +1,56 @@
+<!--pages/yiguo/myadress/myadress.wxml-->
+<view class='title'>
+<text class='tittxt'>订单信息</text>
+</view>
+
+<view class='goods'>
+<view class='pic'>
+<image class='imagpic' src='{{image}}'></image>
+</view>
+
+<view class='goodsdetail'>
+<text class='goodname'>{{winname}}</text>
+<text class='goodprice'>￥{{money}}</text>
+</view>
+</view>
+
+<view class='package'>
+
+<view class='one'>
+<text class='patxt'>套餐类型</text>
+<text class='pactxt'>{{typeis}}</text>
+</view>
+
+<view class='one'>
+<text class='patxt'>购买数量</text>
+<text class='pactxt'>{{num}}</text>
+</view>
+
+</view>
+
+
+<view class='entryform'>
+
+  <view class='form'>
+    <text class='form_txt'>姓名:</text>
+    <input class='form_input' placeholder='必填' maxlength='10' bindinput='name'></input>
+      </view>
+
+      <view class='form'>
+    <text class='form_txt'>电话:</text>
+    <input class='form_input'placeholder='必填' maxlength='11' bindinput='tel'></input>
+      </view>
+
+   <view class='form'>
+    <text class='form_txt'>地址:</text>
+    <input class='form_input' placeholder='必填' maxlength='40' bindinput='adress' ></input>
+  </view>
+
+  
+</view>
+
+<view class='put_form'>
+    <button class='put_btn' bindtap='purchase' > 
+      确认购买
+    </button>
+  </view>

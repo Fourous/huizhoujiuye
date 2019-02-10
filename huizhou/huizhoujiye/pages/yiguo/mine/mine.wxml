@@ -1,0 +1,40 @@
+<view class="mine-box">
+    <view class="user">
+        <view class="user-pic"><image src="{{userInfo.avatarUrl}}"></image></view>
+        <view class="user-name">{{userInfo.nickName}}</view>
+    </view>
+
+    <view class="btn">
+        <ul>
+        <block>
+        <!-- <block  wx:for="{{mine_list}}" wx:for-item="mine" wx:key="index"> -->
+            <!-- <li>
+            <image src="{{mine.pic_url}}"  data-id="{{mine.id}}" bindtap='lookurl' ></image>
+            <span>{{mine.title}}</span>
+            </li> -->
+            <li>
+            <image src="/images/icons/iocn_home_01.png" bindtap='lookurl1'></image>
+            <span>公司简介</span>
+            </li>
+
+            <li>
+            <image src="/images/icons/iocn_home_02.png" bindtap='lookurl2'  ></image>
+            <span>拨打电话</span>
+            </li>
+
+            <li>
+            <contact-button size="22" class='pos'></contact-button>
+            <image src="/images/icons/iocn_home_03.png" ></image>
+            <span>我的客服</span>
+            </li>
+
+
+            
+        </block>
+        </ul>
+    </view>
+
+  
+    
+
+</view>

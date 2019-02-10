@@ -1,0 +1,128 @@
+<view class="detail-box">
+
+    <view class="detail-list">
+        <scroll-view scroll-y="true" style="height: 100%;">
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top">
+  <block wx:for-items="{{detailgood.pic_url}}" wx:key="index">
+    <swiper-item >
+      <image class="slide-image" src="{{item.pic_url}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+            <view class="detail-name">
+                <ul>
+                <view class='onecl'>
+                    <li class="name">{{detailgood.name}}</li>
+                    <li class="price">￥ {{detailgood.price1}}</li>
+                </view>
+                    <view class='whiteline'>
+                    <text class='txt'>简介:</text>
+                    </view>
+                    <li class='detailsel'>净含量:{{detailgood.type}}</li>
+                    <li class='detailsel'>香型:{{detailgood.smil}}</li>
+                    <li class='detailsel'>酒精度:{{detailgood.ox}}</li>
+                    <li class='detailsel'>原料:水、高粱、大米、糯米、小麦、玉米 </li>
+                    <li class='detailsel'>生产日期:见瓶盖或瓶身</li>
+                   <view class='selecview'>
+                    <view class='selec1 {{select1?"active":""}}' bindtap='selec1'>
+                    <text>500ML单瓶</text>
+                    </view>
+                    <view class='selec2 {{select2?"active":""}}' bindtap='selec2'>
+                    <text>500ML两瓶(送精美礼袋)</text>
+                    </view>
+                    <view class='selec3 {{select3?"active":""}}' bindtap='selec3'>
+                    <text>500ML×6瓶(整箱6瓶装)</text>
+                    </view>
+                   
+                   </view>
+                    <view class='content_num'>
+                    <view class='left'>
+                    <text class='lefttxt'>购买数量</text>
+                    </view>
+                    <view class='right'>
+                      <text class='num_jian' bindtap='delnum'> - </text>
+                   <text class='num_num'>{{num}}</text>
+                   <text class='num_jia' bindtap='addnum'> + </text>
+                    </view>
+                 
+                  </view>
+
+                   <view class='picdetail'>
+                   <text class='picdetailtxt'>商品简介</text>
+                   <view class='pic1img' >
+                    <image class='pic1' src="{{detailgood.pic_url[0].pic_url}}"></image>
+                   </view>
+                      <view class='pic1img'>
+                    <image class='pic1' src="../image/pict5.jpg"></image>
+                   </view>
+                  <view class='pic1img'>
+                    <image class='pic1' src="{{detailgood.pic_url[1].pic_url}}"></image>
+                   </view>
+                   <view class='pic1img'>
+                    <image class='pic1' src="../image/pict6.jpg"></image>
+                   </view>
+                    <view class='pic1img'>
+                    <image class='pic1' src="../image/pict8.jpg"></image>
+                   </view>
+                      <view class='pic1img'>
+                    <image class='pic1' src="../image/pict7.jpg"></image>
+                   </view>
+                        <view class='pic1img'>
+                    <image class='pic1' src="../image/adver.png"></image>
+                   </view>
+                    <view class='pic1img'>
+                    <image class='pic1' src="../image/pict1.jpg"></image>
+                   </view>
+                     <view class='pic1img'>
+                    <image class='pic1' src="../image/pict4.jpg"></image>
+                   </view>
+                   <view class='pic1img'>
+                    <image class='pic1' src="{{detailgood.pic_url[2].pic_url}}"></image>
+                   </view>
+                   <!-- 后面几个是共用的 -->
+                  
+                   <!-- <view class='pic1img'>
+                    <image class='pic1' src="../image/pict2.jpg"></image>
+                   </view> -->
+                    <view class='pic1img'>
+                    <image class='pic1' src="../image/pict3.jpg"></image>
+                   </view>
+                  
+                 
+                    
+                 
+                  
+                
+                   </view>
+
+                </ul>
+            </view>
+            <view class='hot-container'>
+
+
+            <!-- <view class="hot-title">热门推荐</view>
+                    <view class='hot-gooditem'>
+                        <view class='hot-imgview' wx:key="index"  wx:for="{{hotgoods}}" wx:for-index="idx" wx:for-item="hot">
+                        <image class='hot-product' src='{{hot.more_pic}}'/>
+                        </view>
+                    </view> -->
+</view>
+            </scroll-view>
+    </view>
+ <view class="detail-footer">
+    <view class="detail-1">
+    <text class='moneytxt'>￥</text>
+   
+    </view>
+    <view class="detail-2"> <text class='moneynum'>{{money}}</text></view>
+   
+    <view class="detail-3">
+     <contact-button class="contactbtn"></contact-button>
+    <text>客服</text>
+    </view>
+    <view class="detail-4"><text bindtap='purchase'>立即购买</text></view>
+ </view>
+</view>

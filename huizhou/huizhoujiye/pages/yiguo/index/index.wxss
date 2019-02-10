@@ -1,0 +1,42 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+/*登录图片*/
+
+.login-icon {
+  height: 100%;
+  width: 100%;
+}
+
+.login-img {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*按钮*/
+
+.loginBtnView {
+  width: 100%;
+  height: 150rpx;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}
+
+.we_loginBtn {
+  width: 500rpx;
+  height: 90rpx;
+  font-size: 20px;
+  line-height: 90rpx;
+  background-color: #00CD00;
+  border-radius: 0;
+  color: white;
+}

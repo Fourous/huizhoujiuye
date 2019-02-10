@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<scroll-view class="container" scroll-y="true" scroll-into-view="{{toView}}"  scroll-top="{{scrollTop}}" bindscroll="scroll">
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top">
+  <block wx:for-items="{{banner_list[0].banner}}" wx:key="index">
+    <swiper-item >
+      <image class="slide-image" src="{{item.pic_url}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='hg-container' id="new" >
+<view class="hg-title11">
+ <text class="hg-title">—— ——   私人定制   —— ——</text>
+</view>
+ 
+        <view class='gooditem'>
+            <view class='imgview' wx:key="index"  wx:for="{{othergoodniew}}" wx:for-index="idx" wx:for-item="good">
+              <image class='productimg' data-id="{{good.id}}" bindtap='hotde' src='{{good.hg_pic}}'/>
+            </view>
+        </view>
+</view>
+<view class='hg-container' id="new" >
+<view class="hg-title11">
+ <text class="hg-title">—— ——   新品推荐   —— ——</text>
+</view>
+ 
+        <view class='gooditem'>
+            <view class='imgview' wx:key="index"  wx:for="{{newgoods}}" wx:for-index="idx" wx:for-item="good">
+              <image class='productimg' data-id="{{good.id}}" bindtap='hotde' src='{{good.hg_pic}}'/>
+            </view>
+        </view>
+</view>
+<view class='hgttt'>
+<view class="hg-title11">
+  <text class="hg-title">—— ——    其他酒类    —— ——</text>
+  </view>
+</view>
+<view class='hg-containerx'>
+        <view class='gooditem'>
+            <view class='imgview' wx:key="index"  wx:for="{{othergoods1}}" wx:for-index="idx" wx:for-item="good">
+              <image class='productimg' data-id="{{good.id}}" bindtap='hotde' src='{{good.hg_pic}}'/>
+            </view>
+        </view>
+</view>
+
+<view class='hg-containerx' >
+        <view class='gooditem'>
+            <view class='imgview' wx:key="index"  wx:for="{{othergoods2}}" wx:for-index="idx" wx:for-item="good">
+              <image class='productimg' data-id="{{good.id}}" bindtap='hotde' src='{{good.hg_pic}}'/>
+            </view>
+        </view>
+</view>
+<view class='hg-containerx' >
+        <view class='gooditem'>
+            <view class='imgview' wx:key="index"  wx:for="{{othergoods3}}" wx:for-index="idx" wx:for-item="good">
+              <image class='productimg' data-id="{{good.id}}" bindtap='hotde' src='{{good.hg_pic}}'/>
+            </view>
+        </view>
+</view>
+
+<!-- <view class='hot-container'>
+  <view class="hot-title">食惠购</view>
+        <view class='hot-gooditem'>
+            <view class='hot-imgview' wx:key="index"  wx:for="{{hotgoods}}" wx:for-index="idx" wx:for-item="hot">
+              <image class='hot-product' src='{{hot.more_pic}}'/>
+            </view>
+        </view>
+</view> -->
+
+<view class="footer" bindtap="tap">
+  <view class='foot'>
+  <text>汇洲酒业有限公司</text>
+
+  </view>
+</view>
+
+
+</scroll-view>
